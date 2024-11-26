@@ -184,3 +184,26 @@ console.log(false && '신명호');
 console.log(true && '신명호');
 
 console.log(true && false && '신명호');
+
+/**
+ * 지수 연산자
+ */
+console.log(2**2);
+console.log(10**3);
+/**
+ * null 연산자
+ */
+let name;
+console.log(name);
+
+name = name ?? '신명호';
+//물음표 두개는 좌측 변수가 null 이거나 undefined이면
+// 오른쪽 값을 반환해라 라는 의미
+console.log(name);
+
+name = name ?? '김지향';
+console.log(name);
+
+let name2;
+name2 ??= '신명호';
+console.log(name2);
