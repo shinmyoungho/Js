@@ -5,8 +5,8 @@
 let mh = {
    name:'신명호',
    group:'용인',
-   dance: function(){
-      return `${this.name}가 춤을 춥니다.`;
+   dance: ()=>{
+      return '안녕';
    },
 };
 
