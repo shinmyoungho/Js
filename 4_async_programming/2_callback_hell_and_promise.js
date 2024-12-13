@@ -40,6 +40,7 @@
 // })
 
 const getPromise = (seconds) => new Promise((resolve,reject)=>{
+   
    setTimeout(()=>{
       resolve([1,2,3,4]);
    },seconds * 1000)
@@ -58,10 +59,10 @@ const getPromise = (seconds) => new Promise((resolve,reject)=>{
 //    .finally(()=>{
 //       console.log('finally');
 //    });
-Promise.all([
-   getPromise(1),
-   getPromise(2),
-   getPromise(1),
-]).then((res)=>{
-   console.log(res);
-})
+// Promise.all([
+//    getPromise(1),
+//    getPromise(2),
+//    getPromise(1),
+// ]).then((res)=>{
+//    console.log(res);
+// })
